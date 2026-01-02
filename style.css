@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Header Glow */
+.glow {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 30px cyan;
+}
+
+/* Neon Text */
+.neon-text {
+    font-size: 3em;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+/* Typewriter Effect */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid cyan;
+    white-space: nowrap;
+    margin: auto;
+    letter-spacing: .15em;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    width: fit-content;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: cyan; }
+}
+
+/* Cards */
+.card {
+    margin: 30px;
+    padding: 25px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px cyan;
+}
+
+/* Highlight Text */
+.highlight {
+    color: cyan;
+    font-weight: bold;
+    text-shadow: 0 0 5px cyan;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.9);
+}
+
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 30px cyan;
+}
+
+/* Form */
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    background: transparent;
+    border: 2px solid cyan;
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Button */
+.contact-form button {
+    background: cyan;
+    color: black;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 15px cyan;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: black;
+    color: cyan;
+    box-shadow: 0 0 30px cyan;
+}
